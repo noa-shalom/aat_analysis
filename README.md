@@ -66,11 +66,11 @@ python src/main.py
 
 This will:
 - Load and clean raw participant data.
-- Remove confusion trials and outliers.
+- Remove outliers and invalid trials.
 - Compute RT and accuracy metrics per condition.
-- Calculate double-difference (D) scores.
+- Calculate double-difference (D) scores for the tested facial expressions (sad, happy and angry).
 - Generate boxplots and summary stats.
-- Export final results to Excel (`AAT_results_final.xlsx`).
+- Export final results.
 
 Before running the script:
 - Set the `config` variable in `main.py` to load either `config/adults.yaml` or `config/kids.yaml`, depending on the dataset you are analyzing.  
