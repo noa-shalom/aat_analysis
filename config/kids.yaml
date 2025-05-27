@@ -1,0 +1,12 @@
+group: kids
+raw_data_path: C:\Users\noaaa\PycharmProjects\aat_analysis\raw_data\kids
+results_dir: C:\Users\noaaa\PycharmProjects\aat_analysis\results\kids
+plots_dir: C:\Users\noaaa\PycharmProjects\aat_analysis\plots\kids
+id_prefix: AA
+id_length: 6
+id_for_example: AA1002
+max_middl_count: 4
+lower_initial_threshold: 150
+upper_initial_threshold: 3000
+lower_completion_threshold: 300
+upper_completion_threshold: 4500

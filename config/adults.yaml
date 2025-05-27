@@ -1,0 +1,12 @@
+group: adults
+raw_data_path: C:\Users\noaaa\PycharmProjects\aat_analysis\raw_data\adults
+results_dir: C:\Users\noaaa\PycharmProjects\aat_analysis\results\adults
+plots_dir: C:\Users\noaaa\PycharmProjects\aat_analysis\plots\adults
+id_prefix: rn
+id_length: 7
+id_for_example: rn24001
+max_middl_count: 3
+lower_initial_threshold: 150
+upper_initial_threshold: 2000
+lower_completion_threshold: 300
+upper_completion_threshold: 3000
