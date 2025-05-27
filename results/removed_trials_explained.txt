@@ -1,0 +1,20 @@
+confusion_lines_count: Number of trials excluded due to excessive direction changes with the joystick
+(more than 3 for adults, more than 4 for kids).
+
+zero_count: Number of trials containing zero values, typically caused by pressing the fire button too early.
+In these trials, only the completion RT (the third measure) is retained for analysis.
+
+initial_RT: Number of excluded initial reaction time (RT) values.
+
+movement_duration: Number of excluded first full movement RT values.
+
+completion_time: Number of excluded completion RT values.
+
+low_accuracy_random_mistakes: True if the initial RT accuracy rate is below 50% and the mistakes are randomly
+distributed across conditions. False otherwise.
+
+more_than_50%_removal_flag: True if more than 50% of the values were removed for any of the three RT measures
+(compared to the total number of trials). False otherwise.
+
+large_outliers_number: True if the participant is identified as an outlier in terms of the number of excluded trials
+(in any of the three RT measures) compared to the group. False otherwise.

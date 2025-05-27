@@ -9,14 +9,21 @@ This repository provides a comprehensive pipeline for processing, analyzing, and
 ```
 noa-shalom-aat_analysis/
 │
-├── requirements.txt       # Python dependencies
-├── config/                # YAML config files for the different versions (i.e., kids and adults)
+├── requirements.txt                    # Python dependencies
+├── config/                             # YAML config files for the different versions (i.e., kids and adults)
 │   ├── adults.yaml
 │   └── kids.yaml
-├── plots/                 # Output figures
-├── raw_data/              # Input data (.txt files)
-├── results/               # Final results and summary Excel files
-└── src/                   # All processing scripts
+├── plots/                              # Output figures
+│   ├── adults/
+│   └── kids/
+├── raw_data/                           # Input data (.txt files)
+│   ├── adults/
+│   └── kids/
+├── results/                            # Final results and summary Excel files
+│   ├── adults/
+│   ├── kids/
+│   └── removed_trials_explained.txt
+└── src/                                # All processing scripts
     ├── analyze.py
     ├── config_loader.py
     ├── constants.py
