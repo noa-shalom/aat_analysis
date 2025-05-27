@@ -48,7 +48,7 @@ pip install -r requirements.txt
 
 ## Configuration
 
-Update `config/adults.yaml` or `config/kids.yaml` with the appropriate paths for:
+If needed, update `config/adults.yaml` and `config/kids.yaml` with the appropriate:
 
 - Raw data directory
 - Output directories for plots and results
@@ -73,19 +73,22 @@ This will:
 - Export final results to Excel (`AAT_results_final.xlsx`).
 
 Before running the script:
-- Set the 'config' variable in main.py to load `config/adults.yaml` or `config/kids.yaml`, according to the data you are analyzing.
-The two code versions differ in thresholds, ID format, etc.
+- Set the `config` variable in `main.py` to load either `config/adults.yaml` or `config/kids.yaml`, depending on the dataset you are analyzing.  
+  The two configurations differ in thresholds, ID formats, and other parameters.
 
 ---
 
 ## Output
 
-- `results/AAT_results_final.xlsx`: Includes per-condition RTs, accuracies, and D-scores.
+- `results/`: 
+  - 'AAT_results_final.xlsx' includes per-condition RTs, accuracies, and D-scores.
+  - 'removed_trials.xlsx' provides a summary of all data cleaning steps.
+  - 'rt_acc_tradeoff.xlsx' contains information about the RT vs. accuracy trade-off analysis.
 - `plots/`: Contains all visualizations including:
-  - Outlier summaries
+  - Outliers count boxplots
   - RT and accuracy distributions
   - D-score comparisons by emotion
-  - RT-accuracy trade-off analysis
+  - RT-accuracy trade-off analysis (if needed)
 
 ---
 
