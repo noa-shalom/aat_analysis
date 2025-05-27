@@ -96,7 +96,7 @@ This will:
 
 ## Customization
 
-Use `config/adults.yaml` vs. `config/kids.yaml` to switch data groups.
+- Use `config/adults.yaml` vs. `config/kids.yaml` to switch data groups.
 The two versions differ in thresholds, ID format, etc.
 ---
 
