@@ -84,7 +84,7 @@ Before running the script:
   - 'AAT_results_final.xlsx' includes per-condition RTs, accuracies, and D-scores.
   - 'removed_trials.xlsx' provides a summary of all data cleaning steps.
   - 'rt_acc_tradeoff.xlsx' contains information about the RT vs. accuracy trade-off analysis.
-- `plots/`: Contains all visualizations including:
+- `plots/`: 
   - Outliers count boxplots
   - RT and accuracy distributions
   - D-score comparisons by emotion
