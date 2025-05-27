@@ -72,6 +72,10 @@ This will:
 - Generate boxplots and summary stats.
 - Export final results to Excel (`AAT_results_final.xlsx`).
 
+Before running the script:
+- Set the 'config' variable in main.py to load `config/adults.yaml` or `config/kids.yaml`, according to the data you are analyzing.
+The two code versions differ in thresholds, ID format, etc.
+
 ---
 
 ## Output
@@ -92,12 +96,6 @@ This will:
 - Post-hoc tests (Tukey HSD or Dunn’s test).
 - Identification of experimental conditions with significant RT-accuracy conflicts.
 
----
-
-## Customization
-
-- Use `config/adults.yaml` vs. `config/kids.yaml` to switch data groups.
-The two versions differ in thresholds, ID format, etc.
 ---
 
 ## Contact
