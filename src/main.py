@@ -10,7 +10,8 @@ import os
 from stats_tests import analyze_rt_accuracy_tradeoff
 from config_loader import load_config
 
-config = load_config("config/adults.yaml")  # adjust
+# Note: Default is Adults, change to "kids.yaml" for the children version
+config = load_config("config/adults.yaml")
 
 # Read data
 folder_path = config["raw_data_path"]
