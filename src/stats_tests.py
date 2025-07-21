@@ -100,6 +100,8 @@ def analyze_rt_accuracy_tradeoff(samples, config, pairs=[("initial_RTs", "ACC_1"
                     plt.savefig(save_path, dpi=300, bbox_inches='tight')
                     plt.show()
                     plt.close()
+            else:
+                print("No intersection in post hoc results.")
 
     # 6. Store the analysis process in Excel
     is_normal = pd.Series(is_normal, name="proportion of normal conditions")
