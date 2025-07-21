@@ -11,11 +11,12 @@ from stats_tests import analyze_rt_accuracy_tradeoff
 from config_loader import load_config
 
 # Note: Default is Adults, change to "kids.yaml" for the children version
-config = load_config("config/adults.yaml")
+config = load_config("config/kids.yaml")
 
 # Read data
 folder_path = config["raw_data_path"]
 participants = read_files_from_folder(folder_path)
+# Note: Default is using the full task, add a "half" argument (='first'/'second') to df_preparation below to change that
 prep_participants = {participant_id: df_preparation(df, config) for participant_id, df in participants.items()}
 
 # Pre-process

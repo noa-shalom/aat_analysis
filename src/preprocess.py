@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 
-def df_preparation(df, config):
+def df_preparation(df, config, half=None):
     """
     Organizes the DataFrames for following analysis.
     - splits the originally one-column df into a multiple-columns df
@@ -35,6 +35,13 @@ def df_preparation(df, config):
     # shortning the strings column
     df.iloc[:, 1] = df.iloc[:, 1].str[-22:]  # current trial only
     df.iloc[:, 1] = df.iloc[:, 1].str[0:4] + '_' + df.iloc[:, 1].str[15:18]
+
+    # Optional: Take only task's first half
+    if half is not None:
+        if half is 'first':
+            df = df.iloc[0:round(len(df) / 2), :]
+        if half is 'second':
+            df = df.iloc[round(len(df) / 2)+1:, :]
 
     # notifying exceptional SDAN
     if len(SDAN) != config["id_length"] or SDAN[:2] != config["id_prefix"]:
