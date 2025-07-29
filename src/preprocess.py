@@ -38,9 +38,9 @@ def df_preparation(df, config, half=None):
 
     # Optional: Take only task's first half
     if half is not None:
-        if half is 'first':
+        if half == 'first':
             df = df.iloc[0:round(len(df) / 2), :]
-        if half is 'second':
+        if half == 'second':
             df = df.iloc[round(len(df) / 2)+1:, :]
 
     # notifying exceptional SDAN
